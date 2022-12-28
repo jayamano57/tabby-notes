@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Tabby Notes",
+    "version": "0.1.0",
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["script.js"],
+        "css": ["styles.css"]
+    }],
+    "permissions": ["storage", "activeTab"],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

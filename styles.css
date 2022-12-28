@@ -1,0 +1,96 @@
+body,
+h1 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container.light {
+  background: white;
+}
+
+.container.dark {
+  background: #131313;
+}
+
+.content {
+  position: relative;
+}
+
+.textarea {
+  background: inherit;
+  width: 256px;
+  height: 256px;
+  min-width: 256px;
+  max-width: 456px;
+  min-height: 120px;
+  max-height: 456px;
+  padding: 0 16px 16px;
+  border: none;
+}
+
+.container.light .textarea {
+  color: black;
+}
+
+.container.dark .textarea {
+  color: white;
+}
+
+.toolbar {
+  padding: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.textarea::-webkit-resizer {
+  display: none;
+}
+
+.container.light .theme-btn {
+  fill: #959595;
+}
+
+.container.light .theme-btn path {
+  stroke: #000;
+}
+
+.container.dark .theme-btn {
+  fill: #fff747;
+}
+
+.container.dark .theme-btn path {
+  stroke: #fff;
+}
+
+.resize {
+  pointer-events: none;
+}
+
+.resizer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  pointer-events: none;
+  bottom: 4px;
+  right: 4px;
+  height: 15px;
+  width: 15px;
+}
+
+/* .container.light .resize {
+  fill: #000;
+}
+
+.container.dark .resize.dark {
+  fill: #fff;
+} */
